@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./index.css";
+import { useNavigate, Link } from "react-router-dom"
 import Header from "../Header/index.jsx"
 function UserDetailsCard() {
   const [users, setUsers] = useState([]);
@@ -8,6 +9,25 @@ function UserDetailsCard() {
   const [message, setMessage] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
   const [showFailure, setShowFailure] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("https://conassserver.onrender.com/api/check-auth", {
+      method:"GET",
+      credentials: "include"
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.user) {
+          console.log("User is logged in:", data.user.Email);
+          navigate("/login")
+        } else {
+          console.log("Not logged in");
+        }
+      });
+  }, [navigate]);
+
+
 
   // get allUsersData
     useEffect(() => {

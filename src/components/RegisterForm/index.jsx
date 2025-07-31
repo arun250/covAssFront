@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import "./index.css"
 
 const RegisterForm = () => {
@@ -186,7 +186,7 @@ const RegisterForm = () => {
         <div className="userCard">
           <button type="submit" className="submit-btn">Register</button>
                 </div> 
-                <p>Already registered? <a href='/login'>Sign in now.</a></p>
+                <p>Already registered? <Link href='/login'>Sign in now.</Link></p>
                 {showedSuccess && (
           <div className="success-message">
                         {message}                        

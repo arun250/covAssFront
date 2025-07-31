@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import "./index.css"
 function LoginForm() {
   const [email, setEmail] = useState("")
@@ -140,7 +140,7 @@ const emailField = () => {
       <button type="submit" className="login-button">
         Sign In
         </button>
-      <p>Not already registered yet? <a href='/'>Sign up now.</a></p>
+      <p>Not already registered yet? <Link to='/'>Sign up now.</Link></p>
       {showSubmitError && <p className="error-message">*{errorMsg}</p>}
       {toast && (
           <div className="success-message">
