@@ -140,7 +140,7 @@ const emailField = () => {
       <button type="submit" className="login-button">
         Sign In
         </button>
-      <p>Not already registered yet? <Link to='/'>Sign up now.</Link></p>
+      <p>Not already registered yet? <Link to='/register'>Sign up now.</Link></p>
       {showSubmitError && <p className="error-message">*{errorMsg}</p>}
       {toast && (
           <div className="success-message">
