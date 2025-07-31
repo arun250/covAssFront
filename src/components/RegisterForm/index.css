@@ -1,0 +1,92 @@
+.userCard{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+.selectCard{
+    display: flex;
+    flex-direction: column;
+  width: 300px;
+    padding: 10px;
+    font-family: "roboto";
+    font-size: 16px;
+}
+
+.user-label{
+    margin-bottom: 10px;
+}
+
+.user-input{
+    height: 35px;
+    font-size: 16px;
+    outline:none;
+}
+.submit-btn{
+    background-color: #146edb;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+   cursor: pointer;
+}
+
+.form-container{
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    display: block;
+  }
+  
+  .success-message {
+    width: 300px;
+    
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: #d1fae5; 
+    color: #065f46;           
+    border: 1px solid #6ee7b7; 
+  }
+  
+  .body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .failure-message{
+    width: 300px;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    background-color: #eebdaf; 
+    color: #065f46;           
+    border: 1px solid #e26c42;
+  }
+
+  .username-select-field {
+    font-size: 14px;
+    height: 40px;
+    border: 1px solid #d7dfe9;
+    background-color: #e2e8f0;
+    color: #64748b;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 8px 16px 8px 16px;
+    outline: none;
+  }

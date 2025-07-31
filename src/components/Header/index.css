@@ -1,0 +1,27 @@
+.navBarContainer{
+    
+    background-color: #1e293b;
+    margin:0px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .btn.logout {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .btn.logout:hover {
+    background-color: #dc2626;
+  }
+  
