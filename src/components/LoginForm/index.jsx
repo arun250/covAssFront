@@ -21,8 +21,8 @@ function LoginForm() {
       .then(res => res.json())
      
       .then(data => {
-        if (data.user.Email) {
-          console.log("User is logged in:", data.user.Email);
+        if (data) {
+          console.log("User is logged in:", data);
           navigate("/user-details")
         } else {
           console.log("Not logged in");
