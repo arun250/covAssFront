@@ -19,13 +19,7 @@ function LoginForm() {
       credentials: "include"
     })
       .then(res => res.json())
-      .then(
-        res.cookie("token", token, {
-          httpOnly: true,
-          secure: true,        
-          sameSite: "None", 
-        })
-      )
+     
       .then(data => {
         if (data.user) {
           console.log("User is logged in:", data.user.Email);
