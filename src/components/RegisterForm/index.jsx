@@ -186,7 +186,7 @@ const RegisterForm = () => {
         <div className="userCard">
           <button type="submit" className="submit-btn">Register</button>
                 </div> 
-                <p>Already registered? <Link href='/login'>Sign in now.</Link></p>
+                <p>Already registered? <Link to='/login'>Sign in now.</Link></p>
                 {showedSuccess && (
           <div className="success-message">
                         {message}                        

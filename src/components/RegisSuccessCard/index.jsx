@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import "./index.css"
 const RegisSuccessCard = () => {
   const navigate = useNavigate()
@@ -22,7 +22,7 @@ const RegisSuccessCard = () => {
   return (
     <div className='success-container'>
           <h2 className=''>You've successfully registered in this portal.</h2>
-          <h2><a href='/login'> Click here</a> to return to the Login Page. </h2>
+          <h2><Link to='/login'> Click here</Link> to return to the Login Page. </h2>
     </div>
   )
 }
